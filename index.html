@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIPEKA - Sistem Pengaduan Kampus</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/storage.js" defer></script>
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <main id="app">
+    <section id="authView" class="auth-wrap">
+      <div class="auth-card">
+        <div class="brand brand-center"><div class="brand-mark">S</div><div><h1>SIPEKA</h1><p>Sistem Pengaduan Kampus</p></div></div>
+        <div id="authContent"></div>
+      </div>
+      <p class="auth-foot">© 2026 SIPEKA · Layanan pengaduan lingkungan kampus</p>
+    </section>
+
+    <section id="mainView" class="layout hidden">
+      <aside class="sidebar" id="sidebar">
+        <div class="brand side-brand"><div class="brand-mark">S</div><div><h2>SIPEKA</h2><p>Pengaduan Kampus</p></div></div>
+        <div class="user-mini"><div class="avatar" id="sideAvatar">N</div><div><strong id="sideName">Pengguna</strong><small id="sideRole">Mahasiswa</small></div></div>
+        <nav id="navigation"></nav>
+        <button class="logout-btn" id="logoutBtn">↪ Keluar</button>
+        <div class="sidebar-note">Versi prototipe<br>Data tersimpan di browser ini</div>
+      </aside>
+      <div class="main-area">
+        <header class="topbar">
+          <button class="mobile-menu" id="mobileMenu" aria-label="Buka menu">☰</button>
+          <div><span class="eyebrow">PORTAL LAYANAN KAMPUS</span><h2 id="pageHeading">Dashboard</h2></div>
+          <div class="top-actions"><button class="icon-btn" data-page="notifications" title="Notifikasi">♧ <span id="notificationDot" class="dot hidden"></span></button><div class="top-user"><div class="avatar small" id="topAvatar">N</div><span id="topName">Pengguna</span></div></div>
+        </header>
+        <section id="pageContent" class="content"></section>
+        <footer class="footer">SIPEKA · Sistem Informasi Pengaduan Kampus</footer>
+      </div>
+    </section>
+    <div id="toast" class="toast"></div>
+    <div id="modalRoot"></div>
+  </main>
+</body>
+</html>
